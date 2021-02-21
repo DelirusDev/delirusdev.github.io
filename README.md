@@ -1,1 +1,0 @@
-# delirusdev.github.io
