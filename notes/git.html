@@ -1,0 +1,52 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width"/><meta name="next-head-count" content="2"/><noscript data-n-css=""></noscript><link rel="preload" href="/_next/static/chunks/main-1fee81af3413b0132bb3.js" as="script"/><link rel="preload" href="/_next/static/chunks/webpack-50bee04d1dc61f8adf5b.js" as="script"/><link rel="preload" href="/_next/static/chunks/framework.abffcf18e526b7c0dbcd.js" as="script"/><link rel="preload" href="/_next/static/chunks/5d04b7195667dd269ad0f00182fe91ba28745207.d4f57090bd55662b89aa.js" as="script"/><link rel="preload" href="/_next/static/chunks/pages/_app-03ed41c9890a7274158d.js" as="script"/><link rel="preload" href="/_next/static/chunks/pages/notes/%5Btitle%5D-18a725890b6b54ca5857.js" as="script"/></head><body><div id="__next"><style data-emotion-css="1aqzmi5">body{color:var(--theme-ui-colors-text,hsl(10,20%,20%));background-color:var(--theme-ui-colors-background,hsl(10,10%,98%));}</style><style data-emotion-css="1fthmpb">*{box-sizing:border-box;}body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;line-height:1.5;font-weight:400;}</style><style data-emotion-css="3ar0s2">.css-3ar0s2{max-width:768px;margin-left:auto;margin-right:auto;padding-left:16px;padding-right:16px;padding-top:8px;padding-bottom:8px;}</style><div class="css-3ar0s2"><header class="css-0"><style data-emotion-css="ywc5c4">.css-ywc5c4{max-width:768px;margin-left:auto;margin-right:auto;padding-left:0;padding-right:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:baseline;-webkit-box-align:baseline;-ms-flex-align:baseline;align-items:baseline;}</style><div class="css-ywc5c4"><style data-emotion-css="ym61x4">.css-ym61x4{font-size:32px;padding-top:8px;padding-bottom:8px;}</style><style data-emotion-css="z8yd3d">.css-z8yd3d{box-sizing:border-box;margin:0;min-width:0;color:var(--theme-ui-colors-primary,hsl(10,80%,50%));font-size:32px;padding-top:8px;padding-bottom:8px;}.css-z8yd3d:hover{color:var(--theme-ui-colors-secondary,hsl(10,60%,50%));}</style><a href="/" to="http://localhost:3000/blog" class="css-z8yd3d"><a>Home</a></a><style data-emotion-css="a9n7s9">.css-a9n7s9{margin-left:auto;margin-right:auto;}</style><div class="css-a9n7s9"></div><style data-emotion-css="6c8i9k">.css-6c8i9k{margin-left:16px;padding-top:8px;padding-bottom:8px;}</style><style data-emotion-css="7tp83q">.css-7tp83q{box-sizing:border-box;margin:0;min-width:0;color:var(--theme-ui-colors-primary,hsl(10,80%,50%));margin-left:16px;padding-top:8px;padding-bottom:8px;}.css-7tp83q:hover{color:var(--theme-ui-colors-secondary,hsl(10,60%,50%));}</style><a href="/notes" to="/notes" class="css-7tp83q">Notes</a><a href="/about" to="/about" class="css-7tp83q">About</a></div></header><h3>Git Basics</h3><div><p>Initialize a repository:</p>
+<p><code>git init</code></p>
+<p>Clone repository:</p>
+<p><code>git clone reponame</code></p>
+<p>Pull changes from remote:</p>
+<p><code>git pull</code></p>
+<p>Add all files to staging:</p>
+<p><code>git add .</code></p>
+<p>Removes and stages the file removal:</p>
+<p><code>git rm filenme</code></p>
+<p>Inline commit:</p>
+<p><code>git commit -m "message"</code></p>
+<p>Push changes to remote:</p>
+<p><code>git push</code></p>
+<p>Revert the changes to head:</p>
+<p><code>git reset --hard HEAD</code></p>
+<p><code>git clean -f -d</code></p>
+<p>Unstage all changes:</p>
+<p><code>git reset HEAD -- .</code></p>
+<p>Overwrite local changes with the state of the last commit:</p>
+<p><code>git checkout -- file</code></p>
+<p>Compare working directory with staging area (no output if files are staged):</p>
+<p><code>git diff</code></p>
+<p>Compare staged changes with the last commit:</p>
+<p><code>git diff --staged</code></p>
+<p>Store changes not ready to commit on the stack:</p>
+<p><code>git stash</code></p>
+<p>Apply and drop the changes from stack:</p>
+<p><code>git stash pop</code></p>
+<p>Viewing commit history in one line:</p>
+<p><code>git log --oneline</code></p>
+<p>List shortnames of each remote with urls:</p>
+<p><code>git remote -v</code></p>
+<p>Set an alias:</p>
+<p><code>git config --global alias.unstage 'reset HEAD --'</code></p>
+<p>Change branch:</p>
+<p><code>git checkout branchname</code></p>
+<p>Create a new branch and switch to it:</p>
+<p><code>git checkout -b newbranch</code></p>
+<p>Show unmerged files during a conflict:</p>
+<p><code>git merge > git status</code></p>
+<p>Generate SSH-key:</p>
+<p><code>ssh-keygen -t ed25519 -C "email@example.com"</code></p>
+<p>Git Tutorial:</p>
+<p><code>man gittutorial</code></p>
+<h3>Useful links</h3>
+<p><a href="https://training.github.com/">GitHub Training</a></p>
+<p><a href="https://docs.gitlab.com/ee/gitlab-basics/index.html">GitLab Basics</a></p>
+<p><a href="https://docs.gitlab.com/ee/university/training/">GitLab Training</a></p>
+<p><a href="https://github.com/github/gitignore">A collection of .gitignore templates</a></p>
+<p><a href="https://learngitbranching.js.org/">Learn Git Branching</a></p>
+</div><style data-emotion-css="n8jbfj">.css-n8jbfj{margin-left:auto;margin-right:auto;padding-left:0;padding-right:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:baseline;-webkit-box-align:baseline;-ms-flex-align:baseline;align-items:baseline;}</style><footer class="css-n8jbfj"><div class="css-a9n7s9"></div><style data-emotion-css="y8aj3r">.css-y8aj3r{padding:0;}</style><div class="css-y8aj3r">© 2021 next.js</div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"data":{"title":"Git Basics"},"content":"\u003cp\u003eInitialize a repository:\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003egit init\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003eClone repository:\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003egit clone reponame\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003ePull changes from remote:\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003egit pull\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003eAdd all files to staging:\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003egit add .\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003eRemoves and stages the file removal:\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003egit rm filenme\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003eInline commit:\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003egit commit -m \"message\"\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003ePush changes to remote:\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003egit push\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003eRevert the changes to head:\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003egit reset --hard HEAD\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003egit clean -f -d\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003eUnstage all changes:\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003egit reset HEAD -- .\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003eOverwrite local changes with the state of the last commit:\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003egit checkout -- file\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003eCompare working directory with staging area (no output if files are staged):\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003egit diff\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003eCompare staged changes with the last commit:\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003egit diff --staged\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003eStore changes not ready to commit on the stack:\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003egit stash\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003eApply and drop the changes from stack:\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003egit stash pop\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003eViewing commit history in one line:\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003egit log --oneline\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003eList shortnames of each remote with urls:\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003egit remote -v\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003eSet an alias:\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003egit config --global alias.unstage 'reset HEAD --'\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003eChange branch:\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003egit checkout branchname\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003eCreate a new branch and switch to it:\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003egit checkout -b newbranch\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003eShow unmerged files during a conflict:\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003egit merge \u003e git status\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003eGenerate SSH-key:\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003essh-keygen -t ed25519 -C \"email@example.com\"\u003c/code\u003e\u003c/p\u003e\n\u003cp\u003eGit Tutorial:\u003c/p\u003e\n\u003cp\u003e\u003ccode\u003eman gittutorial\u003c/code\u003e\u003c/p\u003e\n\u003ch3\u003eUseful links\u003c/h3\u003e\n\u003cp\u003e\u003ca href=\"https://training.github.com/\"\u003eGitHub Training\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"https://docs.gitlab.com/ee/gitlab-basics/index.html\"\u003eGitLab Basics\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"https://docs.gitlab.com/ee/university/training/\"\u003eGitLab Training\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"https://github.com/github/gitignore\"\u003eA collection of .gitignore templates\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003e\u003ca href=\"https://learngitbranching.js.org/\"\u003eLearn Git Branching\u003c/a\u003e\u003c/p\u003e\n"},"__N_SSG":true},"page":"/notes/[title]","query":{"title":"git"},"buildId":"XTg4EHvXXpg5GCvQ3KY9v","nextExport":false,"isFallback":false,"gsp":true}</script><script nomodule="" src="/_next/static/chunks/polyfills-250f16924c392849df26.js"></script><script src="/_next/static/chunks/main-1fee81af3413b0132bb3.js" async=""></script><script src="/_next/static/chunks/webpack-50bee04d1dc61f8adf5b.js" async=""></script><script src="/_next/static/chunks/framework.abffcf18e526b7c0dbcd.js" async=""></script><script src="/_next/static/chunks/5d04b7195667dd269ad0f00182fe91ba28745207.d4f57090bd55662b89aa.js" async=""></script><script src="/_next/static/chunks/pages/_app-03ed41c9890a7274158d.js" async=""></script><script src="/_next/static/chunks/pages/notes/%5Btitle%5D-18a725890b6b54ca5857.js" async=""></script><script src="/_next/static/XTg4EHvXXpg5GCvQ3KY9v/_buildManifest.js" async=""></script><script src="/_next/static/XTg4EHvXXpg5GCvQ3KY9v/_ssgManifest.js" async=""></script></body></html>
